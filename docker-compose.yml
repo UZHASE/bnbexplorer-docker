@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+  backend:
+    container_name: backend
+    build:
+      context: ../
+      dockerfile: bnbexplorer-docker/services/backend/Dockerfile
+    networks:
+      - bnbexplorer
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../bnbexplorer-backend/:/bnbexplorer-backend
+
+  frontend:
+    container_name: frontend
+    build:
+      context: ../
+      dockerfile: bnbexplorer-docker/services/frontend/Dockerfile
+    networks:
+      - bnbexplorer
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../bnbexplorer-frontend/:/bnbexplorer-frontend
+
+networks:
+  bnbexplorer:
