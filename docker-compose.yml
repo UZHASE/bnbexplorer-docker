@@ -4,8 +4,8 @@ services:
   backend:
     container_name: backend
     build:
-      context: ../
-      dockerfile: bnbexplorer-docker/services/backend/Dockerfile
+      context: ../bnbexplorer-backend
+#      dockerfile: ../bnbexplorer-backend/Dockerfile
     networks:
       - bnbexplorer
     ports:
@@ -16,8 +16,8 @@ services:
   frontend:
     container_name: frontend
     build:
-      context: ../
-      dockerfile: bnbexplorer-docker/services/frontend/Dockerfile
+      context: ../bnbexplorer-frontend
+#      dockerfile: bnbexplorer-docker/services/frontend/Dockerfile
     networks:
       - bnbexplorer
     ports:
