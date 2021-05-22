@@ -1,7 +1,5 @@
 # BnB Explorer Docker
 ## Open Project [Documentation](https://github.com/UZHASE/bnbexplorer-docker/wiki)
-
-***
 ## Setup
 Setup local Docker development environment for BnB Explorer
 ### Prerequisites
