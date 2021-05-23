@@ -17,5 +17,6 @@ This should give you the strucutre:
         |-bnbexplorer-backend/
 ```
 4. Run `cd bnbexplorer-docker`
-5. Run `docker-compose up`
-6. Open a browser on [localhost:3000](localhost:3000)
+5. Run `docker-compose build`
+6. Run `docker-compose up`
+7. Open a browser on [localhost:3000](localhost:3000)
