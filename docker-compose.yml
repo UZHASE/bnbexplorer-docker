@@ -22,6 +22,7 @@ services:
       - "3000:3000"
     volumes:
       - ../bnbexplorer-frontend/:/bnbexplorer-frontend
+      - /bnbexplorer-frontend/node_modules
 
 networks:
   bnbexplorer:
